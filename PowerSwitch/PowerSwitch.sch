@@ -1,0 +1,206 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5D190AA7
+P 1500 2100
+F 0 "J2" H 1418 1875 50  0000 C CNN
+F 1 "CTRL" H 1418 1966 50  0000 C CNN
+F 2 "PowerSwitch:PadHeader_1x01_P2.54mm" H 1500 2100 50  0001 C CNN
+F 3 "~" H 1500 2100 50  0001 C CNN
+	1    1500 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D191CE9
+P 3000 2100
+F 0 "R2" V 2793 2100 50  0000 C CNN
+F 1 "47k" V 2884 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2930 2100 50  0001 C CNN
+F 3 "~" H 3000 2100 50  0001 C CNN
+	1    3000 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5D19239F
+P 5200 1000
+F 0 "J3" H 5118 675 50  0000 C CNN
+F 1 "OUT" H 5118 766 50  0000 C CNN
+F 2 "PowerSwitch:PadHeader_1x02_P2.54mm" H 5200 1000 50  0001 C CNN
+F 3 "~" H 5200 1000 50  0001 C CNN
+	1    5200 1000
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D193B24
+P 2350 2250
+F 0 "R1" H 2280 2204 50  0000 R CNN
+F 1 "6k8" H 2280 2295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2280 2250 50  0001 C CNN
+F 3 "~" H 2350 2250 50  0001 C CNN
+	1    2350 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1700 2100 2350 2100
+Wire Wire Line
+	2350 2400 2350 2650
+$Comp
+L power:GND #PWR0101
+U 1 1 5D19460F
+P 2350 2650
+F 0 "#PWR0101" H 2350 2400 50  0001 C CNN
+F 1 "GND" H 2355 2477 50  0000 C CNN
+F 2 "" H 2350 2650 50  0001 C CNN
+F 3 "" H 2350 2650 50  0001 C CNN
+	1    2350 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2100 2850 2100
+Connection ~ 2350 2100
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 5D195DD1
+P 3550 2100
+F 0 "Q1" H 3756 2146 50  0000 L CNN
+F 1 "AO3400" H 3756 2055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3750 2200 50  0001 C CNN
+F 3 "~" H 3550 2100 50  0001 C CNN
+	1    3550 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2100 3350 2100
+$Comp
+L power:GND #PWR0102
+U 1 1 5D197130
+P 3650 2650
+F 0 "#PWR0102" H 3650 2400 50  0001 C CNN
+F 1 "GND" H 3655 2477 50  0000 C CNN
+F 2 "" H 3650 2650 50  0001 C CNN
+F 3 "" H 3650 2650 50  0001 C CNN
+	1    3650 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2650 3650 2300
+Wire Wire Line
+	1700 1150 1800 1150
+Wire Wire Line
+	1800 1150 1800 1350
+$Comp
+L power:GND #PWR0103
+U 1 1 5D19781C
+P 1800 1350
+F 0 "#PWR0103" H 1800 1100 50  0001 C CNN
+F 1 "GND" H 1805 1177 50  0000 C CNN
+F 2 "" H 1800 1350 50  0001 C CNN
+F 3 "" H 1800 1350 50  0001 C CNN
+	1    1800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1000 4750 1000
+Wire Wire Line
+	4750 1000 4750 1200
+$Comp
+L power:GND #PWR0104
+U 1 1 5D197E84
+P 4750 1200
+F 0 "#PWR0104" H 4750 950 50  0001 C CNN
+F 1 "GND" H 4755 1027 50  0000 C CNN
+F 2 "" H 4750 1200 50  0001 C CNN
+F 3 "" H 4750 1200 50  0001 C CNN
+	1    4750 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q2
+U 1 1 5D1983B5
+P 3650 900
+F 0 "Q2" V 3993 900 50  0000 C CNN
+F 1 "AO3401" V 3902 900 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3850 1000 50  0001 C CNN
+F 3 "~" H 3650 900 50  0001 C CNN
+	1    3650 900 
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5000 800  5000 900 
+Wire Wire Line
+	3850 800  5000 800 
+Wire Wire Line
+	1700 1050 2950 1050
+Wire Wire Line
+	2950 1050 2950 800 
+Wire Wire Line
+	2950 800  3450 800 
+$Comp
+L Device:R R3
+U 1 1 5D19C7A6
+P 3250 1150
+F 0 "R3" V 3043 1150 50  0000 C CNN
+F 1 "6k8" V 3134 1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3180 1150 50  0001 C CNN
+F 3 "~" H 3250 1150 50  0001 C CNN
+	1    3250 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 1050 2950 1150
+Wire Wire Line
+	2950 1150 3100 1150
+Connection ~ 2950 1050
+Wire Wire Line
+	3400 1150 3650 1150
+Wire Wire Line
+	3650 1150 3650 1100
+$Comp
+L Device:R R4
+U 1 1 5D19D3A0
+P 3650 1500
+F 0 "R4" H 3580 1454 50  0000 R CNN
+F 1 "10k" H 3580 1545 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3580 1500 50  0001 C CNN
+F 3 "~" H 3650 1500 50  0001 C CNN
+	1    3650 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 1150 3650 1350
+Connection ~ 3650 1150
+Wire Wire Line
+	3650 1650 3650 1900
+Text Label 2050 1050 0    50   ~ 0
+POWER_IN
+Text Label 4150 800  0    50   ~ 0
+POWER_OUT
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5D190166
+P 1500 1150
+F 0 "J1" H 1418 825 50  0000 C CNN
+F 1 "IN" H 1418 916 50  0000 C CNN
+F 2 "PowerSwitch:PadHeader_1x02_P2.54mm" H 1500 1150 50  0001 C CNN
+F 3 "~" H 1500 1150 50  0001 C CNN
+	1    1500 1150
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
