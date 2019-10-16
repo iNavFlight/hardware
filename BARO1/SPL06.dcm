@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SPL06
+K barometer,pressure,
+F https://github.com/iNavFlight/inav/files/3364426/SPL06-001_datasheet.pdf
+$ENDCMP
+#
+#End Doc Library
