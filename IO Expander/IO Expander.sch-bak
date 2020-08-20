@@ -1,0 +1,240 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_Expansion:PCF8574A U1
+U 1 1 5E988EA0
+P 2350 2550
+F 0 "U1" H 2350 3431 50  0000 C CNN
+F 1 "PCF8574A" H 2350 3340 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 2350 2550 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf" H 2350 2550 50  0001 C CNN
+	1    2350 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2150 3000 2150
+Wire Wire Line
+	3850 2250 3450 2250
+Wire Wire Line
+	2850 2350 3850 2350
+Wire Wire Line
+	3850 2450 2850 2450
+Wire Wire Line
+	2850 2550 3850 2550
+Wire Wire Line
+	3850 2650 2850 2650
+Wire Wire Line
+	2850 2750 3850 2750
+$Comp
+L Transistor_Array:ULN2803A U2
+U 1 1 5E991F0F
+P 4250 2350
+F 0 "U2" H 4250 2917 50  0000 C CNN
+F 1 "ULN2803A" H 4250 2826 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm" H 4300 1700 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 4350 2150 50  0001 C CNN
+	1    4250 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2850 2850 2850
+Wire Wire Line
+	4250 3050 4250 3400
+Wire Wire Line
+	4250 3400 2350 3400
+Wire Wire Line
+	2350 3400 2350 3250
+Wire Wire Line
+	1850 2650 1700 2650
+Wire Wire Line
+	1700 2650 1700 3400
+Wire Wire Line
+	1700 3400 2350 3400
+Connection ~ 2350 3400
+Wire Wire Line
+	1700 2650 1700 2550
+Wire Wire Line
+	1700 2550 1850 2550
+Connection ~ 1700 2650
+Wire Wire Line
+	1700 2550 1700 2450
+Wire Wire Line
+	1700 2450 1850 2450
+Connection ~ 1700 2550
+Wire Wire Line
+	1100 2150 1300 2150
+Wire Wire Line
+	1300 2150 1300 1650
+Wire Wire Line
+	1300 1650 2350 1650
+Wire Wire Line
+	2350 1650 2350 1850
+Wire Wire Line
+	1100 2350 1700 2350
+Wire Wire Line
+	1100 2450 1100 3400
+Wire Wire Line
+	1100 3400 1350 3400
+Connection ~ 1700 3400
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5E9A2B11
+P 900 2250
+F 0 "J1" H 818 2567 50  0000 C CNN
+F 1 "Conn_01x04" H 818 2476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 900 2250 50  0001 C CNN
+F 3 "~" H 900 2250 50  0001 C CNN
+	1    900  2250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2150 4900 2150
+Wire Wire Line
+	4650 2250 4900 2250
+Wire Wire Line
+	4650 2350 4900 2350
+Wire Wire Line
+	4650 2450 4900 2450
+Wire Wire Line
+	4650 2550 4900 2550
+Wire Wire Line
+	4650 2650 4900 2650
+Wire Wire Line
+	4650 2750 4900 2750
+Wire Wire Line
+	4650 2850 4900 2850
+Wire Wire Line
+	1350 3400 1350 1300
+Wire Wire Line
+	1350 1300 3000 1300
+Wire Wire Line
+	3000 1300 3000 1550
+Connection ~ 1350 3400
+Wire Wire Line
+	1350 3400 1700 3400
+Wire Wire Line
+	3450 1550 3450 1300
+Wire Wire Line
+	3450 1300 3000 1300
+Connection ~ 3000 1300
+Wire Wire Line
+	3000 1950 3000 2150
+Connection ~ 3000 2150
+Wire Wire Line
+	3000 2150 2850 2150
+Wire Wire Line
+	3450 1950 3450 2250
+Connection ~ 3450 2250
+Wire Wire Line
+	3450 2250 2850 2250
+NoConn ~ 1850 2950
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E9AB3C5
+P 3000 1750
+F 0 "SW1" V 3046 1702 50  0000 R CNN
+F 1 "SW_Push" V 2955 1702 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 3000 1950 50  0001 C CNN
+F 3 "~" H 3000 1950 50  0001 C CNN
+	1    3000 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5E9AEC69
+P 3450 1750
+F 0 "SW2" V 3496 1702 50  0000 R CNN
+F 1 "SW_Push" V 3405 1702 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 3450 1950 50  0001 C CNN
+F 3 "~" H 3450 1950 50  0001 C CNN
+	1    3450 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 5E9A2AAF
+P 5100 2450
+F 0 "J2" H 5180 2442 50  0000 L CNN
+F 1 "Conn_01x08" H 5180 2351 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 5100 2450 50  0001 C CNN
+F 3 "~" H 5100 2450 50  0001 C CNN
+	1    5100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J3
+U 1 1 5E9A5006
+P 5100 3400
+F 0 "J3" H 5180 3392 50  0000 L CNN
+F 1 "Conn_01x08" H 5180 3301 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 5100 3400 50  0001 C CNN
+F 3 "~" H 5100 3400 50  0001 C CNN
+	1    5100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3400 4900 3400
+Connection ~ 4250 3400
+Wire Wire Line
+	4900 3400 4900 3300
+Connection ~ 4900 3400
+Connection ~ 4900 3200
+Wire Wire Line
+	4900 3200 4900 3100
+Connection ~ 4900 3300
+Wire Wire Line
+	4900 3300 4900 3200
+Wire Wire Line
+	4900 3400 4900 3500
+Connection ~ 4900 3500
+Wire Wire Line
+	4900 3500 4900 3600
+Connection ~ 4900 3600
+Wire Wire Line
+	4900 3600 4900 3700
+Connection ~ 4900 3700
+Wire Wire Line
+	4900 3700 4900 3800
+Wire Wire Line
+	1700 2350 1700 2150
+Wire Wire Line
+	1700 2150 1850 2150
+Wire Wire Line
+	1100 2250 1850 2250
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5F3F2E7D
+P 5100 1900
+F 0 "J4" H 5180 1942 50  0000 L CNN
+F 1 "Conn_01x01" H 5180 1851 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 5100 1900 50  0001 C CNN
+F 3 "~" H 5100 1900 50  0001 C CNN
+	1    5100 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2050 4900 2050
+Wire Wire Line
+	4900 2050 4900 1900
+Text Notes 650  2150 0    50   ~ 0
+3.3V
+Text Notes 650  2350 0    50   ~ 0
+SCL
+Text Notes 650  2450 0    50   ~ 0
+GND
+Text Notes 650  2250 0    50   ~ 0
+SDA
+$EndSCHEMATC
