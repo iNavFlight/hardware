@@ -7,8 +7,8 @@ Each directory contains a different project.
 [PowerSwitch](PowerSwitch): A high side power switch that
 can be turned on or off by the flight controller using PINIO:
 
-![](PowerSwitch/misc/PowerSwitch-top.svg)
-![](PowerSwitch/misc/PowerSwitch-bottom.svg)
+<img src="PowerSwitch/misc/PowerSwitch-top.svg" width="50%" height="50%">
+<img src="PowerSwitch/misc/PowerSwitch-bottom.svg" width="50%" height="50%">
 
 Includes a KiBot script to generate Gerbers/BOM/CPL files ready
 to send to JLCPCB for fabrication. You can use
